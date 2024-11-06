@@ -36,3 +36,11 @@
 [submodule "utils/gtest"]
 	path = utils/gtest
 	url = https://github.com/google/googletest
+[submodule "cadical"]
+	path = cadical
+	url = https://github.com/meelgroup/cadical
+	branch = mate-only-libraries-1.8.0
+[submodule "cadiback"]
+	path = cadiback
+	url = https://github.com/meelgroup/cadiback
+	branch = mate
