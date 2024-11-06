@@ -1,0 +1,19 @@
+#!/bin/sh
+
+
+git submodule update --init --recursive
+
+cd cadical
+./configure
+make
+cd ..
+
+cd cadiback
+./configure
+mv generate generate-bk
+cp ../generate-cadiback generate
+make
+rm generate
+mv generate-bk generate
+cd ..
+
